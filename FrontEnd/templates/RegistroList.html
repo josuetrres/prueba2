@@ -22,29 +22,35 @@
 <body>
 
     <div class="container">
-        <h1 class="mt-4 mb-4">Lista de Censos</h1>
+        <h1 class="mt-4 mb-4">Lista de Registros</h1>
 
 
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th scope="col">ID</th>
                     <th scope="col">Codigo</th>
                     <th scope="col">Es Correcto</th>
+                    <th scope="col">Acciones</th>
                 </tr>
             </thead>
             <tbody>
                 {% for item in lista %}
                 <tr>
-                    <th scope="row">{{ item.id }}</th>
                     <td>{{ item.codigo }}</td>
                     <td>{{ item.esCorrecto }}</td>
+                    <td>
+                    <form action="{{ url_for('router.validar_registro', id=item.id) }}" method="POST">
+                        <button type="submit" class="btn btn-success">Validar</button>
+                    </form>
+                    </td>
 
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
+            <a href="{{ url_for('router.save_registro') }}"  class="btn btn-primary">Agregar Registro</a>
     </div>
+    
 
     <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>

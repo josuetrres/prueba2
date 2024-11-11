@@ -3,10 +3,10 @@ package com.tercertotest.controller.tda;
 import com.tercertotest.controller.exceptions.ListEmptyException;
 import com.tercertotest.controller.exceptions.OverFlowException;
 
-public class StackOperations <E> extends LinkedList {
+public class Stack <E> extends LinkedList {
     private Integer top;
     
-    public  StackOperations(Integer _top) {
+    public  Stack(Integer _top) {
         this.top = _top;
     }
 

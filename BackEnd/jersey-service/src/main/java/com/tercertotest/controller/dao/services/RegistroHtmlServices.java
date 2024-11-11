@@ -23,7 +23,7 @@ public class RegistroHtmlServices {
     public RegistroHtml getRegistroHtml(){
         return this.obj.getRegistroHtml();
     }
-    public void setCenso(RegistroHtml registroHtml){
+    public void setRegistroHtml(RegistroHtml registroHtml){
         this.obj.setRegistroHtml(registroHtml);
     }
 

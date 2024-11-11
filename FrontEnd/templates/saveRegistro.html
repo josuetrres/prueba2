@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardar Registro HTML</title>
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Guardar Registro HTML</h2>
+        {% if error %}
+            <div class="alert alert-danger">{{ error }}</div>
+        {% endif %}
+        <form method="POST" action="{{ url_for('router.save_registro') }}">
+            <div class="mb-3">
+                <label for="codigo" class="form-label">Código</label>
+                <input type="text" class="form-control" id="codigo" name="codigo" required>
+            </div>
+            <div class="mb-3">
+                <label for="id" class="form-label">ID (opcional)</label>
+                <input type="number" class="form-control" id="id" name="id">
+            </div>
+            <div class="mb-3">
+                <label for="esCorrecto" class="form-label">Es Correcto</label>
+                <select class="form-control" id="esCorrecto" name="esCorrecto">
+                    <option value="true">Sí</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+        <a href="{{ url_for('router.registro_list') }}" class="btn btn-primary mt-3">Home</a>
+    </div>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>

@@ -1,9 +1,14 @@
 package com.tercertotest.controller.models;
 
+import com.tercertotest.controller.tda.Stack;
+
 public class RegistroHtml {
     private Integer id;
     private String codigo;
     private boolean esCorrecto;
+
+    
+
 
     public boolean EsCorrecto() {
         return this.esCorrecto;
@@ -33,6 +38,10 @@ public class RegistroHtml {
         this.codigo = codigo;
     }
 
+    public boolean validarCodigoHtml(String codigoHtml) {
+        RegistroValidator validador = new RegistroValidator();
+        return validador.validar(codigoHtml);
+    }
     
 
     

@@ -4,10 +4,11 @@ com/example/rest/Main.class
 com/tercertotest/controller/dao/implement/AdapterDao.class
 com/tercertotest/controller/dao/services/RegistroHtmlServices.class
 com/tercertotest/controller/exceptions/ListEmptyException.class
+com/tercertotest/controller/tda/Stack.class
 com/example/rest/RegistroHtmlApi.class
 com/tercertotest/controller/exceptions/OverFlowException.class
 com/example/rest/MyResource.class
-com/tercertotest/controller/tda/StackOperations.class
+com/tercertotest/controller/models/RegistroValidator.class
 com/tercertotest/controller/dao/implement/InterfazDao.class
 com/tercertotest/controller/tda/Node.class
 com/tercertotest/controller/models/RegistroHtml.class

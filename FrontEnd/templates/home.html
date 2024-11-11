@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Registro de Censos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style.css') }}">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+        }
+        .card {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="mt-4 mb-4">Bienvenido al Sistema de Registro de Censos</h1>
+        
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ver Registros</h5>
+                        <p class="card-text">Consulta todos los registros de censos y valida el código HTML de los mismos.</p>
+                        <a href="{{ url_for('router.registro_list') }}" class="btn btn-primary">Ver Registros</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card to create a new registro -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Nuevo Registro</h5>
+                        <p class="card-text">Agrega un nuevo registro con su respectivo código HTML.</p>
+                        <a href="{{ url_for('router.save_registro') }}" class="btn btn-success">Crear Registro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+</body>
+</html>

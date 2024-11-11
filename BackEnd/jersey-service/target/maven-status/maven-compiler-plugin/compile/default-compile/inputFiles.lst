@@ -1,9 +1,9 @@
 /home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/tercertotest/controller/models/RegistroHtml.java
 /home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/tercertotest/controller/dao/RegistroHtmlDao.java
 /home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/tercertotest/controller/tda/Node.java
+/home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/tercertotest/controller/tda/Stack.java
 /home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/example/rest/MyResource.java
 /home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/tercertotest/controller/tda/LinkedList.java
-/home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/tercertotest/controller/tda/StackOperations.java
 /home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/example/rest/RegistroHtmlApi.java
 /home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/tercertotest/controller/exceptions/OverFlowException.java
 /home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/tercertotest/controller/dao/implement/AdapterDao.java
@@ -11,3 +11,4 @@
 /home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/tercertotest/controller/dao/services/RegistroHtmlServices.java
 /home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/example/rest/Main.java
 /home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/tercertotest/controller/dao/implement/InterfazDao.java
+/home/josue/Desktop/Prueba/BackEnd/jersey-service/src/main/java/com/tercertotest/controller/models/RegistroValidator.java

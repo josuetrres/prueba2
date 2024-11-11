@@ -49,24 +49,22 @@ public class RegistroHtmlDao extends AdapterDao{
     }
 
     public void deleteRegistroHtml(Integer id) throws Exception {
-        // Asegúrate de que listAll esté inicializado
+     
         if (listAll == null) {
-            this.listAll = listAll(); // Inicializa si es necesario
+            this.listAll = listAll(); 
         }
-    
-        // Buscar el índice del censo con el ID proporcionado
+   
         for (int i = 0; i < listAll.getSize(); i++) {
-            registroHtml = listAll.get(i); // Obtener el censo en la posición i
+            registroHtml = listAll.get(i); 
             if (registroHtml.getId().equals(id)) {
-                // Si se encuentra el censo, eliminarlo usando el método delete
+          
                 listAll.delete(i);
-                return; // Salir del método después de eliminar
-            }
+                return; 
         }
     
-        // Si no se encontró, lanzar una excepción
+    
         throw new Exception("Censo no encontrado");
     }
     
-    
+}
 }
